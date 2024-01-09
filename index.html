@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="avatar.png">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="port.css">
+   
+    <script
+    src="https://kit.fontawesome.com/c4338603d0.js"
+    crossorigin="anonymous"
+    ></script>
+    
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Udit</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#hom" class="nav-link active-link" >Home</a>
+                    <div class="circle"></div>
+                </li>
+                
+                <li class="nav_list">
+                    <a href="#" class="nav-link" onclick="clickHome()">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn"><a href="https://bit.ly/3R2zkzn" class="nav-link">Download CV </a></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Udit Saxena</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Full Stack developer with a passion for creating visually stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn"><a href="https://bit.ly/3R2zkzn" class="nav-link">Download CV </a></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"> <a href="https://www.instagram.com/udit.saxena.775/" class="nav-link-1">Instagram</a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/udit-saxena-932a0b269/" class="nav-link-1">Linkedin</a></div>
+                <div class="icon">
+                    
+                    <a href="https://github.com/ksajdfkposam/" class="nav-link-1">Github</a></div>
+                    <div class="icon">
+                    
+                        <a href="https://leetcode.com/chandlerbbbbb/" class="nav-link-1">LeetCode</a></div>
+                
+            </div>
+            
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="avatar.jpeg" alt="avatar">
+            </div>
+          </div>
+         
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>
+
+                       HEY, I am currently pursuing Engineering in Computer Science.
+                       I am well-versed in HTML, CSS, JavaScript, React, Node, Express, MongoDB and other cutting edge
+                       frameworks and libraries,which allows me to implement interactive features. 
+                       I've solved around 400+ coding problems on different coding platforms. 
+                       Additionally, I was a Full Stack Web Developer Intern at Edureka.
+
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn"><a href="https://bit.ly/3R2zkzn" class="nav-link">Download CV </a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                       
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>SQL</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                
+                <h3>Zwiggy app</h3>
+                <h4> <a href="https://github.com/ksajdfkposam/Zwiggy.git" class="code ko">Code Link <i class="fa-solid fa-link"></i></a></h4><h4>Through MERN</h4>
+                <label>
+ Building a user-friendly interface for browsing restaurants, searching for specific dishes, placing orders, and managing profiles.
+Implementing features like filters, and live order tracking.
+                    
+                    Handling user authentication and authorization.
+                    Managing restaurant data, including menus, pricing, and availability.
+                    Processing orders and communicating with delivery partners.
+                    Implementing payment gateways for secure transactions.
+
+                    
+                    Storing user and restaurant information, including reviews and ratings.
+                    Storing order details and tracking their status.
+                    Managing menu items and their availability.
+                      </label>
+                   
+                
+
+
+
+
+            </div>
+            <div class="project-box">
+                
+                <h3>CryptoVerse</h3>
+                <h4> <a href="https://github.com/ksajdfkposam/Cryptography_.git" class="code">Code Link<i class="fa-solid fa-link"></i></a></h4><h4>Through MERN</h4>
+                <label>
+                    Develop a web application that empowers users to track cryptocurrency prices, manage their portfolios, 
+                    and stay informed about market trends.Used Three.js in order to provide information in the form of chart.Also used 3D Modelling to give real world experience.
+                  
+                    Implement secure registration and login functionality for user accounts.
+Enforce password strength requirements and secure password storage.
+Protect sensitive user data and financial information.
+                      </label>
+                   
+                
+
+
+
+
+            </div>
+
+
+
+
+           
+               
+                   
+                   <div class="row " id="contact">
+                      <div class="col">
+                         <div class="contact-info">
+                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                             <p><i class="uil uil-envelope"></i> Email: saxenaudit55@gmail.com</p>
+                             <p><i class="uil uil-phone"></i> Tel: +91 7060889493</p>
+                         </div>
+                      </div>
+                      
+                   </div>
+                
+             </div>
+           
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Udit Saxena .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+
+
+        <div class="footer-social-icons">
+            <div class="icon"> <a href="https://www.instagram.com/udit.saxena.775/" class="nav-link-1">Instagram</a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/udit-saxena-932a0b269/" class="nav-link-1">Linkedin</a></div>
+            <div class="icon">
+                
+                <a href="https://github.com/ksajdfkposam/" class="nav-link-1">Github</a></div>
+                <div class="icon">
+                
+                    <a href="https://leetcode.com/chandlerbbbbb/" class="nav-link-1">LeetCode</a></div>
+            
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Udit Saxena</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+       <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    
+</body>
+<script src="./port.js"></script>
+
+</html>
